@@ -1,6 +1,5 @@
 'use strict';
 
-const app = {
+module.exports = {
+  host: 'http://localhost:3000',
 };
-
-module.exports = app;
