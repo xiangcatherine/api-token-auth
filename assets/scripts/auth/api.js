@@ -39,8 +39,7 @@ const signOut = (data) => {
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
-    data
+    }
   })
 }
 

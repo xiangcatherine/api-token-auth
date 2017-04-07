@@ -32,8 +32,9 @@ const changePasswordFailure = (error) => {
   console.log('Sorry, your password did not change.')
 }
 
-const signOutSuccess = (data) => {
+const signOutSuccess = () => {
   console.log('You have signed out!')
+  store.user = null
 }
 
 const signOutFailure = (error) => {
