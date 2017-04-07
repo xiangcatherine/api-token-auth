@@ -13,7 +13,7 @@ const signUpFailure = (error) => {
 const signInSuccess = (data) => {
   console.log(data)
   console.log('You have successfully signed in!')
-  // store the user object somehow?
+  // store the user object:
   store.user = data.user
 }
 
