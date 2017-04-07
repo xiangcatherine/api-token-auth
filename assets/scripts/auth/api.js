@@ -3,7 +3,6 @@
 const config = require('../config.js')
 
 const signUp = (data) => {
-  console.log('data is', data)
   return $.ajax({
     url: config.apiOrigin + '/sign-up',
     method: 'POST',
@@ -12,6 +11,24 @@ const signUp = (data) => {
   })
 }
 
+const signIn = (data) => {
+  return $.ajax({
+    url: config.apiOrigin + '/sign-in',
+    method: 'POST',
+    data
+  })
+}
+
+const changePassword = (data) => {
+  return $.ajax({
+    url: config.apiOrigin + '/change-password',
+    method: 'PATCH',
+    data
+  })
+}
+
 module.exports = {
-  signUp
+  signUp,
+  signIn,
+  changePassword
 }
